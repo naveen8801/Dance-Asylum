@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{url_for('static', filename='/css/index.css')}}"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" href="{{url_for('static', filename='Data/icon.png')}}" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <title>Dance Asylum</title>
+  </head>
+  <body>
+    <div class="header" id="header">
+      <div class="my_navbar" id="my_navbar">
+        <ul class="list_navbar">
+          <li class="list_items">
+            <a href="#header" class="navbar_links">Home</a>
+          </li>
+          <li class="list_items">
+            <a href="#about_us" class="navbar_links">About Us</a>
+          </li>
+          <li class="list_items">
+            <a href="#events" class="navbar_links">Events</a>
+          </li>
+          <li class="list_items">
+            <a href="#contact_us" class="navbar_links">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+      <div class="menue_hamburger">
+        <img
+          src="https://www.flaticon.com/svg/static/icons/svg/3388/3388829.svg"
+          alt="menue_icon"
+          class="toggler"
+        />
+      </div>
+
+      <div class="headings">
+        <h1 class="main_heading">Dance Asylum</h1>
+        <p class="subtext_headings">Feel Proud Dance It Out !</p>
+      </div>
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-ride="carousel"
+        data-interval="2000"
+        data-pause="pause"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              class="d-block w-100 sliding"
+              src="{{url_for('static', filename='/Data/dance1.jpg')}}"
+              alt="First slide"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              class="d-block w-100 sliding"
+              src="{{url_for('static', filename='/Data/dance2.jpg')}}"
+              alt="Second slide"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              class="d-block w-100 sliding"
+              src="{{url_for('static', filename='/Data/dance3.jpg')}}"
+              alt="Third slide"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              class="d-block w-100 sliding"
+              src="{{url_for('static', filename='/Data/dance4.jpg')}}"
+              alt="Third slide"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="containner">
+      <div class="about_us" id="about_us">
+        <div class="about_us_sub">
+          <div class="about_us_child">
+            <h4 class="sub_Ub_heading_about_us">Our Mission</h4>
+            <p class="sub_text">
+              To explore areas that spark your interest, developing them in
+              dance, and using those skills to contribute to something beyond
+              yourself.
+            </p>
+          </div>
+          <div class="about_us_child">
+            <h4 class="sub_Ub_heading_about_us">Our Essence</h4>
+            <p class="sub_text">
+              To bring out the hidden dance talent of intellectual geniuses
+              around the country on one dance platform.
+            </p>
+          </div>
+          <div class="about_us_child">
+            <h4 class="sub_Ub_heading_about_us">Our Promise</h4>
+            <p class="sub_text">
+              At dance asylum your privacy will be respected and unbiased
+              results will be carried out.
+            </p>
+          </div>
+          <div class="about_us_child">
+            <h4 class="sub_Ub_heading_about_us">Our Vibe</h4>
+            <p class="sub_text">
+              Creating a new dance era encountering marvelous dance battles,
+              adhere you with the magical dance world.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="events" id="events">
+        <div class="header_events">
+          <h1 class="events_heading">Events</h1>
+          <div class="sub_text_eventss">
+            <p class="subtext_headings_events">
+              Click on the event banner to register and get details.
+            </p>
+          </div>
+        </div>
+        <div class="events_scroller">
+          <div
+            id="carouselExampleControls"
+            class="carousel slide"
+            data-ride="carousel"
+            data-interval="3800"
+            data-pause="pause"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <a href="https://forms.gle/WvgxMExvAwzuyjvz5" target="blank"><img
+                  class="d-block w-100 img_events_slider"
+                  src="{{url_for('static', filename='/Data/Events/event1.png')}}"
+                  alt="First slide"
+                /></a>
+              </div>
+              <div class="carousel-item">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSf6EvcbVB7wpF51tkwf_kQZd5Y0XrVeruh8Yp_2UteOTU71TQ/viewform?usp=sf_link" target="blank"><img
+                  class="d-block w-100 img_events_slider"
+                  src="{{url_for('static', filename='/Data/Events/event2.png')}}"
+                  alt="Second slide"
+                /></a>
+              </div>
+              <div class="carousel-item">
+                <a href=""><img
+                  class="d-block w-100 img_events_slider"
+                  src="{{url_for('static', filename='/Data/Events/event1.png')}}"
+                  alt="Third slide"
+                /></a>
+              </div>
+              <a href=""><div class="carousel-item">
+                <img
+                  class="d-block w-100 img_events_slider"
+                  src="{{url_for('static', filename='/Data/Events/event2.png')}}"
+                  alt="Fourth slide"
+                /></a>
+              </div>
+            </div>
+            <a
+              class="carousel-control-prev"
+              href="#carouselExampleControls"
+              role="button"
+              data-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a
+              class="carousel-control-next"
+              href="#carouselExampleControls"
+              role="button"
+              data-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="contact_us" id="contact_us">
+        <section class="contact py-5 bg-light contact_us_sub" id="contact">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <h4>Get in touch</h4>
+                <hr />
+              </div>
+              <div class="col-md-6">
+                <div class="social">
+                  <h5>Social:</h5>
+                  <ul class="list-unstyled">
+                    <a href="https://www.instagram.com/dance_asylum/"
+                       target="blank"><li>
+                        <img
+                          src="https://image.flaticon.com/icons/svg/2111/2111463.svg"
+                          alt="logo_insta"
+                          class="social_image"
+                        /></li
+                    ></a>
+                    <a href="mailto:danceasylum7@gmail.com"
+                      ><li>
+                        <img
+                          src="https://www.flaticon.com/svg/static/icons/svg/732/732200.svg"
+                          alt="gmail_insta"
+                          class="social_image"
+                        /></li
+                    ></a>
+                  </ul>
+                </div>
+                <div class="email">
+                  <h5>Email:</h5>
+                  <ul class="list-unstyled">
+                    <li>danceasylum7@gmail.com</li>
+                  </ul>
+                </div>
+                <div class="phone">
+                  <h5>Phone:</h5>
+                  <ul class="list-unstyled">
+                    <li>+91- 7206956898</li>
+                  </ul>
+                </div>
+                <hr />
+                <div class="social">
+                  <ul class="list-inline list-unstyled">
+                    <li class="list-inline-item">
+                      <a href="#"
+                        ><i class="fa fa-facebook-square fa-2x"></i
+                      ></a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="#"
+                        ><i class="fa fa-google-plus-square fa-2x"></i
+                      ></a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="#"><i class="fa fa-youtube-play fa-2x"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="card">
+                  <div class="card-body">
+                    <form method="POST" action="">
+                      <div class="form-row messagediv">
+                        <h5 class="message">{{message}}</h5>
+                      </div>
+                      <div class="form-row">
+                        <div class="form-group col-md-6">
+                          <input
+                            id="Full Name"
+                            name="FullName"
+                            placeholder="Full Name"
+                            class="form-control"
+                            type="text"
+                            required="required"
+                          />
+                        </div>
+                        <div class="form-group col-md-6">
+                          <input
+                            type="email"
+                            class="form-control"
+                            id="inputEmail4"
+                            placeholder="Email"
+                            name="email"
+                            required="required"
+                          />
+                        </div>
+                      </div>
+                      <div class="form-row">
+                        <div class="form-group col-md-6">
+                          <input
+                            type="tel"
+                            class="form-control"
+                            id="inputEmail4"
+                            placeholder="Phone 123-456-7890"
+                            name="phone"
+                            required="required"
+                          />
+                        </div>
+                        <div class="form-group col-md-12">
+                          <textarea
+                            id="comment"
+                            name="message"
+                            cols="40"
+                            rows="5"
+                            placeholder="Your Message"
+                            class="form-control"
+                            required="required"
+                          ></textarea>
+                        </div>
+                      </div>
+
+                      <div class="form-row">
+                        <button type="submit" class="btn btn-danger">
+                          Submit
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="footer">
+        <h5 class="Copyright">
+          <small>&copy; Copyright 2020, Dance Asylum</small>
+        </h5>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="{{url_for('static', filename='/js/index.js')}}"></script>
+  </body>
+</html>

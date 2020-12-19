@@ -1,0 +1,344 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.header {
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+  position: relative;
+}
+
+.toggler {
+  width: 38px;
+  height: 38px;
+  filter: invert(100%);
+  float: right;
+}
+.menue_hamburger {
+  display: none;
+  position: fixed;
+  right: 0px;
+  margin-right: 16px;
+  margin-top: 16px;
+  padding: 16px;
+  z-index: 4;
+}
+.menue_burger_clicked_icon {
+  display: none;
+}
+.menue_burger_clicked_navabr {
+  display: initial;
+}
+
+.toggler:hover {
+  width: 41px;
+  height: 41px;
+  cursor: pointer;
+}
+
+.navbar_links {
+  color: rgba(255, 255, 255, 0.877);
+}
+.sliding {
+  width: 100%;
+  height: 100vh;
+}
+.my_navbar {
+  position: fixed;
+  z-index: 3;
+  right: 0px;
+  text-emphasis: center;
+  margin: 48px;
+}
+.list_items {
+  display: inline-block;
+  text-align: center;
+  padding-left: 45px;
+  font-weight: 300;
+  font-size: 1.4vw;
+  color: rgba(255, 255, 255, 0.877);
+  font-family: "Do Hyeon", sans-serif;
+}
+.list_items:hover {
+  cursor: pointer;
+  font-size: 1.5vw;
+  text-decoration: underline;
+  text-emphasis-color: red;
+}
+.list_navbar {
+  list-style: none;
+  margin: 4px;
+}
+.headings {
+  position: absolute;
+  z-index: 3;
+  color: red;
+  margin-top: 220px;
+  margin-left: 220px;
+}
+.main_heading {
+  font-family: "Do Hyeon", sans-serif;
+  font-size: 6vw;
+  color: rgba(255, 255, 255, 0.562);
+  letter-spacing: 0.6vw;
+}
+.subtext_headings {
+  font-family: "Do Hyeon", sans-serif;
+  font-size: 1.4vw;
+  color: rgba(255, 255, 255, 0.562);
+  letter-spacing: 0.3vw;
+}
+
+.about_us {
+  background-color: rgba(0, 0, 0, 0.884);
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  height: 100%;
+  background-size: 100% 100%;
+}
+
+.about_us_sub {
+  margin: 40px;
+  height: 100%;
+  width: 64%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.about_us_child {
+  width: 40%;
+  height: 35vh;
+  margin: 20px;
+  border-radius: 18px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  text-align: center;
+  padding: 16px;
+}
+
+.sub_Ub_heading_about_us {
+  font-size: 1.3vw;
+  color: rgba(255, 255, 255, 0.877);
+  font-family: "Do Hyeon", sans-serif;
+  font-weight: 200;
+  letter-spacing: 0.32rem;
+}
+
+.sub_text {
+  font-family: "Quicksand", sans-serif;
+  color: rgba(255, 255, 255, 0.877);
+  font-weight: 200;
+  font-size: 1.2vw;
+}
+.about_us_child:hover {
+  width: 44%;
+  height: 32vh;
+  transition: 1.7s;
+}
+.events {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.884);
+}
+.header_events {
+  display: inline-block;
+  margin: 40px;
+}
+.subtext_headings_events {
+  font-weight: 200;
+  color: aliceblue;
+  font-size: 1.2vw;
+}
+.events_heading {
+  margin: 0px;
+  padding: 0px;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.877);
+  font-family: "Do Hyeon", sans-serif;
+}
+
+.events_scroller {
+  width: 75%;
+  display: block;
+  margin: 6px auto 6px auto;
+  height: 90%;
+  padding-bottom: 20px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+
+
+}
+.img_events_slider {
+  width: 100%;
+  height: 60%;
+}
+
+.img_events_slider:hover {
+  cursor: pointer;
+}
+
+/* CONTACT US */
+
+.contact_us {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+.contact_us_sub {
+  opacity: 0.9;
+}
+
+.social_image {
+  width: 40px;
+  height: 40px;
+  margin-left: 11px;
+  margin-right: 11px;
+  margin-top: 6px;
+  margin-top: 6px;
+  border-style: none;
+}
+.message{
+  font-size: 24px;
+  font-weight: 400;
+  display: inline-block;
+  margin: auto auto auto auto;
+}
+.messagediv{
+  text-align: center;
+  background-color: rgba(168, 247, 89, 0.884);
+  margin: 10px;
+  border-style: none;
+  border-radius: 4px;
+
+}
+
+/* FOOTER*/
+
+.footer {
+  background-color: #132743;
+  width: 100%;
+  height: 50px;
+}
+
+.Copyright {
+  display: inline-block;
+  margin: 10px;
+  font-size: 1.3vw;
+  color: rgba(255, 255, 255, 0.877);
+  font-family: "Do Hyeon", sans-serif;
+}
+
+/* WINDOW SIZE */
+
+@media only screen and (max-width: 715px) {
+  .menue_hamburger {
+    display: block;
+    width: 100%;
+  }
+  .my_navbar {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: lawngreen;
+    margin: 0px;
+    height: 40vh;
+    background-color: rgba(27, 26, 26, 0.774);
+  }
+  .list_items {
+    display: inherit;
+    padding: 8px;
+    font-size: 18px;
+    margin: 0px;
+  }
+  .list_items:hover {
+    font-size: 19px;
+  }
+  .list_navbar {
+    list-style: none;
+    margin: 0px;
+  }
+  .menue_burger_clicked_icon {
+    display: none;
+  }
+  .menue_burger_clicked_navabr {
+    display: initial;
+  }
+}
+
+@media only screen and (max-width: 642px) {
+  .about_us_child {
+    width: 45%;
+    height: 35vh;
+  }
+  .headings {
+    margin-top: 196px;
+    margin-left: 133px;
+  }
+  .main_heading {
+    font-size: 49px;
+  }
+  .subtext_headings {
+    font-size: 15px;
+  }
+  .sub_Ub_heading_about_us {
+  font-size: 55px;
+
+}
+}
+
+@media only screen and (max-width: 502px) {
+  .about_us_child {
+    width: 75%;
+    height: 100%;
+  }
+
+  .sub_Ub_heading_about_us {
+    font-size: 15px;
+  }
+  .sub_text {
+    font-size: 12px;
+  }
+  .headings {
+    margin-top: 235px;
+    margin-left: 42px;
+  }
+  .main_heading {
+    font-size: 51px;
+    font-family: "Do Hyeon", sans-serif;
+    color: rgba(255, 255, 255, 0.562);
+    letter-spacing: 1.1vw;
+  }
+  .subtext_headings {
+    font-size: 17px;
+    font-family: "Do Hyeon", sans-serif;
+    color: rgba(255, 255, 255, 0.562);
+    letter-spacing: 0.8vw;
+  }
+  .subtext_headings_events {
+    font-size: 18px;
+  }
+  .events_heading {
+    font-size: 35px;
+  }
+  .Copyright {
+    display: inline-block;
+    margin: 10px;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.877);
+    font-family: "Do Hyeon", sans-serif;
+  }
+  .events_scroller {
+    width: 95%;
+    display: block;
+    margin: 6px auto 6px auto;
+    height: 100%;
+    padding-bottom: 20px;
+  }
+}
